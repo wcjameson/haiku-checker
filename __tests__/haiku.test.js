@@ -16,4 +16,8 @@ describe('Haiku', () => {
     
   });
 
+  test('should find and return the number of vowels in the second string', () => {
+    const haiku = new Haiku("line one", "line two", "line three");
+    expect(haiku.vowelCountLine2()).toEqual(3);
+  });
 });
