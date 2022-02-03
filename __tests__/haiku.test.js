@@ -33,12 +33,12 @@ describe('Haiku', () => {
 
   test('should find and return number of syllables in second string regardless of case', () => {
     const haiku = new Haiku("LINE ONe", "LIne TwO", "LINE Three");
-    expect(haiku.syllableCountLine1()).toEqual(4);
+    expect(haiku.syllableCountLine2()).toEqual(3);
   });
 
   test('should find and return number of syllables in third string regardless of case', () => {
     const haiku = new Haiku("LINE ONe", "LIne TwO", "LINE Three");
-    expect(haiku.syllableCountLine1()).toEqual(4);
+    expect(haiku.syllableCountLine3()).toEqual(3);
   });
   
 });
