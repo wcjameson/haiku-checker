@@ -12,18 +12,18 @@ describe('Haiku', () => {
 
   test('should find and return the number of syllables in the first string', () => {
     const haiku = new Haiku("line one", "line two", "line three");
-    expect(haiku.vowelCountLine1()).toEqual(4);
+    expect(haiku.syllableCountLine1()).toEqual(4);
     
   });
 
-  test('should find and return the number of vowels in the second string', () => {
+  test('should find and return the number of syllables in the second string', () => {
     const haiku = new Haiku("line one", "line two", "line three");
-    expect(haiku.vowelCountLine2()).toEqual(3);
+    expect(haiku.syllableCountLine2()).toEqual(3);
   });
 
-  test('should find and return the number of vowels in the third string', () => {
+  test('should find and return the number of syllables in the third string', () => {
     const haiku = new Haiku("line one", "line two", "line three");
-    expect(haiku.vowelCountLine3()).toEqual(4);
+    expect(haiku.syllableCountLine3()).toEqual(3);
   });
   
 });
